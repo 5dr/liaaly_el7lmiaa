@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="458.0" style="-fx-background-color: #e0d8c3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liaalyel7lmiaa.orderController">
+   <children>
+      <Label cache="true" layoutX="160.0" layoutY="29.0" prefHeight="88.0" prefWidth="138.0" text="order" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.43" contrast="0.19" hue="-0.12" saturation="-0.07" />
+         </effect>
+      </Label>
+      <Label cache="true" layoutX="254.0" layoutY="217.0" prefHeight="37.0" prefWidth="88.0" text="المشروبات" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <Label cache="true" layoutX="67.0" layoutY="217.0" prefHeight="37.0" prefWidth="50.0" text="السعر" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <TextField fx:id="addition" alignment="CENTER" layoutX="28.0" layoutY="499.0" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #ffffff;" text="0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="313.0" layoutY="656.0" onAction="#ftora" prefHeight="57.0" prefWidth="138.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="الفاتورة" textFill="#361b14">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="381.0" layoutY="20.0" onAction="#loggout" prefHeight="51.0" prefWidth="63.0" style="-fx-background-color: red; -fx-opacity: .7;" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loggout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="656.0" onAction="#addNew" prefHeight="57.0" prefWidth="128.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="اضافة" textFill="#361b14">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <Label cache="true" layoutX="303.0" layoutY="499.0" prefHeight="50.0" prefWidth="147.0" text="الخدمة الاضافية :" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <TextField fx:id="name" alignment="CENTER" layoutX="28.0" layoutY="571.0" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <Label cache="true" layoutX="316.0" layoutY="571.0" prefHeight="50.0" prefWidth="128.0" text="الكاشير" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <ScrollPane layoutY="254.0" prefHeight="219.0" prefWidth="458.0">
+         <content>
+            <Pane fx:id="pane" prefHeight="244.0" prefWidth="443.0" style="-fx-background-color: #e0d8c3;">
+               <children>
+                  <TextField fx:id="text_drink" alignment="CENTER" disable="true" layoutX="222.0" layoutY="16.0" prefHeight="50.0" prefWidth="219.0" style="-fx-background-color: #ffffff;">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="text_price" alignment="CENTER" disable="true" layoutX="101.0" layoutY="16.0" prefHeight="50.0" prefWidth="113.0">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="delet" buttonType="RAISED" layoutX="2.0" layoutY="15.0" prefHeight="50.0" prefWidth="82.0" style="-fx-background-color: #ff0000; -fx-opacity: .8;" text="مسح">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="656.0" onAction="#withoutftora" prefHeight="57.0" prefWidth="165.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="بدون الفاتورة" textFill="#361b14">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <Label cache="true" layoutX="28.0" layoutY="14.0" prefHeight="37.0" prefWidth="128.0" text="yousef fahmy" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <Label cache="true" layoutX="272.0" layoutY="117.0" prefHeight="37.0" prefWidth="88.0" text="اسم العميل" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <Label cache="true" layoutX="14.0" layoutY="117.0" prefHeight="37.0" prefWidth="63.0" text="الطربيزة" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <TextField fx:id="client" alignment="CENTER" layoutX="180.0" layoutY="154.0" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #ffffff;" text="no name">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="table_name" alignment="CENTER" layoutX="14.0" layoutY="154.0" prefHeight="50.0" prefWidth="63.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="151.0" onAction="#addclint" prefHeight="57.0" prefWidth="88.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="ادخال" textFill="#361b14">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

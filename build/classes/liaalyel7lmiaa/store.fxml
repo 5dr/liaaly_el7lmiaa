@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="store_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="682.0" style="-fx-background-color: #e0d8c3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liaalyel7lmiaa.storeController">
+   <children>
+      <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="88.0" layoutY="32.0" prefHeight="88.0" prefWidth="507.0" text="المخزن" textFill="#361b14" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="60.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.43" contrast="0.19" hue="-0.12" saturation="-0.07" />
+         </effect>
+      </Label>
+      <TableView fx:id="table" layoutX="359.0" layoutY="146.0" prefHeight="577.0" prefWidth="301.0" style="-fx-background-color: #e0d8c3; -fx-border-color: #c4996c;">
+        <columns>
+          <TableColumn fx:id="amount" prefWidth="133.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="الكمية" />
+          <TableColumn fx:id="name" prefWidth="167.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="الاسم" />
+        </columns>
+      </TableView>
+      <JFXButton id="store_pane" buttonType="RAISED" layoutX="31.0" layoutY="329.0" onAction="#OpenAdd" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="أضافة صنف جديد" textFill="#361b14">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="605.0" layoutY="14.0" onAction="#loggout" prefHeight="58.0" prefWidth="63.0" style="-fx-background-color: red; -fx-opacity: .7;" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loggout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</Pane>

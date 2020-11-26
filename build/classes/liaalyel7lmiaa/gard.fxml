@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="store_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="782.0" style="-fx-background-color: #e0d8c3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liaalyel7lmiaa.gardController">
+   <children>
+      <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="120.0" layoutY="14.0" prefHeight="88.0" prefWidth="507.0" text="الجرد" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="60.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.43" contrast="0.19" hue="-0.12" saturation="-0.07" />
+         </effect>
+      </Label>
+      <TableView fx:id="table" layoutX="18.0" layoutY="229.0" prefHeight="492.0" prefWidth="712.0" style="-fx-background-color: #e0d8c3; -fx-border-color: #c4996c;">
+         <columns>
+            <TableColumn fx:id="time" prefWidth="243.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="الوقت" />
+            <TableColumn fx:id="tables" prefWidth="137.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="الطربيزة" />
+            <TableColumn fx:id="type" prefWidth="115.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="النوع" />
+            <TableColumn fx:id="price" maxWidth="133.0" prefWidth="84.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="السعر" />
+            <TableColumn fx:id="name" maxWidth="164.0" prefWidth="131.0" style="-fx-alignment: CENTER-RIGHT;-fx-font-weight:bold;-fx-font-size:20px;" text="الاسم" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="694.0" layoutY="14.0" onAction="#loggout" prefHeight="58.0" prefWidth="63.0" style="-fx-background-color: red; -fx-opacity: .7;" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loggout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <DatePicker fx:id="date_from" layoutX="461.0" layoutY="135.0" prefHeight="34.0" prefWidth="174.0" />
+      <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="644.0" layoutY="135.0" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #c4996c; -fx-background-radius: 3;" text="جرد من :" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <DatePicker fx:id="date_to" layoutX="210.0" layoutY="135.0" prefHeight="34.0" prefWidth="174.0" />
+      <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="390.0" layoutY="135.0" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: #c4996c; -fx-background-radius: 3;" text="الى :" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="127.0" onAction="#elgard" prefHeight="34.0" prefWidth="145.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="جرد" textFill="#361b14">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="591.0" layoutY="733.0" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #c4996c; -fx-background-radius: 3;" text="اجمالى السعر" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="195.0" layoutY="733.0" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #c4996c; -fx-background-radius: 3;" text="عدد الطلبات" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Label fx:id="l_price" alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="474.0" layoutY="733.0" prefHeight="34.0" prefWidth="96.0" style="-fx-background-color: #c4996c; -fx-background-radius: 3;" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Label fx:id="l_total" alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="85.0" layoutY="733.0" prefHeight="34.0" prefWidth="96.0" style="-fx-background-color: #c4996c; -fx-background-radius: 3;" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <JFXTimePicker fx:id="time_to" defaultColor="#c4996c" layoutX="212.0" layoutY="183.0" />
+      <JFXTimePicker fx:id="time_from" defaultColor="#c4996c" layoutX="463.0" layoutY="183.0" />
+   </children>
+</Pane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="order_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1065.0" style="-fx-background-color: #c4996c;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liaalyel7lmiaa.tableController">
+   <children>
+      <ScrollPane fx:id="scroll_open" layoutY="51.0" prefHeight="718.0" prefWidth="1065.0">
+         <content>
+            <Pane fx:id="open_pane" prefHeight="718.0" prefWidth="1050.0" style="-fx-background-color: #c4996c;" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scroll_ava" layoutY="51.0" prefHeight="718.0" prefWidth="1065.0">
+         <content>
+            <Pane fx:id="available_pane" prefHeight="718.0" prefWidth="1050.0" style="-fx-background-color: #c4996c;" />
+         </content>
+      </ScrollPane>
+      <ButtonBar prefHeight="51.0" prefWidth="978.0">
+         <buttons>
+            <JFXButton buttonType="RAISED" onAction="#available" prefHeight="51.0" prefWidth="533.0" style="-fx-background-color: #c4996c;" text="الطربيزات المتاحة" textFill="#361b14">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#open" prefHeight="51.0" prefWidth="533.0" style="-fx-background-color: #c4996c;" text="الطربيزات المفتوحة" textFill="#361b14">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </buttons>
+      </ButtonBar>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="1000.0" onAction="#loggout" prefHeight="51.0" prefWidth="63.0" style="-fx-background-color: red; -fx-opacity: .7;" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loggout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</Pane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="458.0" style="-fx-background-color: #e0d8c3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liaalyel7lmiaa.storeAddController">
+   <children>
+      <Label cache="true" layoutX="147.0" layoutY="14.0" prefHeight="88.0" prefWidth="165.0" text="اضافة صنف" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.43" contrast="0.19" hue="-0.12" saturation="-0.07" />
+         </effect>
+      </Label>
+      <TextField fx:id="name" alignment="CENTER" layoutX="97.0" layoutY="184.0" prefHeight="50.0" prefWidth="165.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <Label cache="true" layoutX="281.0" layoutY="187.0" prefHeight="45.0" prefWidth="109.0" text="الصنف :" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <Label cache="true" layoutX="281.0" layoutY="268.0" prefHeight="45.0" prefWidth="109.0" text="الكميه :" textAlignment="CENTER" textFill="#361b14">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <effect>
+            <BoxBlur iterations="0" />
+         </effect>
+      </Label>
+      <TextField fx:id="amount" alignment="CENTER" layoutX="97.0" layoutY="266.0" prefHeight="50.0" prefWidth="165.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="97.0" layoutY="345.0" onAction="#AddStore" prefHeight="45.0" prefWidth="280.0" style="-fx-background-color: #c4996c; -fx-opacity: .8;" text="أضافة " textFill="#361b14">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="377.0" layoutY="14.0" onAction="#loggout" prefHeight="51.0" prefWidth="63.0" style="-fx-background-color: red; -fx-opacity: .7;" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loggout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</Pane>

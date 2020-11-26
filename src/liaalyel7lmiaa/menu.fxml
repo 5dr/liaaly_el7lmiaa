@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="order_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#tmam" prefHeight="768.0" prefWidth="1076.0" style="-fx-background-color: #c4996c;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liaalyel7lmiaa.menuController">
+   <children>
+      <Label layoutX="284.0" layoutY="30.0" text="قائمة المشروبات" textFill="#361b14">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="14.0" layoutY="155.0" prefHeight="41.0" prefWidth="669.0">
+        <buttons>
+            <MenuButton fx:id="drinks" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="مشروبات ساخنه">
+               <items>
+                  <CheckMenuItem fx:id="check" mnemonicParsing="false" onAction="#addmilk" text="اضافة حليب" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_torky" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-border-color: #ffffff;" text="التركى">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_ice_coffee" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="Ice Coffee">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_fresh_juice" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="Fresh Juice">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_hot_drink" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="158.0" style="-fx-border-color: #ffffff;" text="Hot Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </MenuButton>
+        </buttons>
+      </ButtonBar>
+      <JFXButton buttonType="RAISED" layoutX="800.0" layoutY="359.0" onAction="#addOrder" prefHeight="48.0" prefWidth="261.0" style="-fx-background-color: #e0d8c3;" text="اضافة" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="order" alignment="CENTER" layoutX="800.0" layoutY="238.0" prefHeight="47.0" prefWidth="261.0" style="-fx-background-color: #ffffff;" textFill="#361b14">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" alignment="CENTER" layoutX="931.0" layoutY="300.0" prefHeight="47.0" prefWidth="95.0" style="-fx-background-color: #ffffff;" textFill="#361b14">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="14.0" layoutY="451.0" prefHeight="41.0" prefWidth="775.0">
+         <buttons>
+            <MenuButton fx:id="B_soda" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="SODA">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_smoozy" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-border-color: #ffffff;" text="Smoozy">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_milk_shake" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="Milk Shake">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_cocktail" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="Fruit cocktail">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_spacial" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="158.0" style="-fx-border-color: #ffffff;" text="Special">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="B_soft" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="41.0" prefWidth="215.0" style="-fx-border-color: #ffffff;" text="Soft Drink">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+         </buttons>
+      </ButtonBar>
+      <Label fx:id="id" alignment="CENTER" layoutX="825.0" layoutY="448.0" prefHeight="47.0" prefWidth="95.0" style="-fx-background-color: #ffffff;" textFill="#361b14" visible="false">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="801.0" layoutY="705.0" onAction="#tmam" prefHeight="48.0" prefWidth="261.0" style="-fx-background-color: #e0d8c3;" text="تمام" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="985.0" layoutY="48.0" onAction="#loggout" prefHeight="51.0" prefWidth="63.0" style="-fx-background-color: red; -fx-opacity: .7;" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loggout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="three" buttonType="RAISED" layoutX="985.0" layoutY="424.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="3" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="two" buttonType="RAISED" layoutX="920.0" layoutY="424.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="2" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="one" buttonType="RAISED" layoutX="857.0" layoutY="424.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="1" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="six" buttonType="RAISED" layoutX="984.0" layoutY="481.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="6" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="five" buttonType="RAISED" layoutX="919.0" layoutY="481.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="5" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="four" buttonType="RAISED" layoutX="856.0" layoutY="481.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="4" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="nine" buttonType="RAISED" layoutX="983.0" layoutY="540.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="9" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="eight" buttonType="RAISED" layoutX="918.0" layoutY="540.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="8" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="siven" buttonType="RAISED" layoutX="855.0" layoutY="540.0" onAction="#addamount" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" text="7" textFill="#361b14">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="amount" alignment="CENTER" layoutX="847.0" layoutY="300.0" prefHeight="47.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" textFill="#361b14">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="delet" buttonType="RAISED" layoutX="855.0" layoutY="597.0" onAction="#addamount" prefHeight="48.0" prefWidth="182.0" style="-fx-background-color: #e0d8c3;" text="مسح" textFill="#ff3300">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>
